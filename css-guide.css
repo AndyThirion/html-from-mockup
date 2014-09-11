@@ -1,0 +1,36 @@
+/*Classes: 
+	
+	Page sections:
+		*header = top portion of page
+				 
+				
+		*nav-top = nav bar between header and article/body
+		nav-side = fixed nav bar on side (outside article)
+
+		article - div that contains the entire article (everything but header and navs)
+			*article-title = Article Title
+			*article-intro = intro paragraph(s)
+			section = div that wraps each section of the article
+				section-title = styling for the section title <h4>
+				section-content = styling for the text content of each section
+				section-table = table in Section 1
+				section-code = code block in Section 2
+				section-img = image in section 3
+				section-ol = Ordered List in Section 3
+				
+				comments = wrapper for comments section
+				comments-title = "Comments" title
+				comment-heading = small headings in comments (USER INFO and COMMENT)
+				comments-ol = Comment entry fields (email, display name, website)
+				comment-input = div for comment entry field (white box)
+				comment = wraps each individual comment
+					comment-img = styles the profile image for each comment
+					comment-words = Username, time, and paragraph for each comment
+
+				timestamp = timestamp at end of sections, before comments
+
+
+
+	*Text formatting:
+		bold - bolds the span
+		*/
