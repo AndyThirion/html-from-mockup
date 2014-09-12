@@ -1,4 +1,8 @@
 /*Classes: 
+
+	Components:
+		button = styles buttons
+				currently used on section-table buttons
 	
 	Page sections:
 		*header = top portion of page
@@ -21,7 +25,7 @@
 				comments = wrapper for comments section
 				comments-title = "Comments" title
 				comment-heading = small headings in comments (USER INFO and COMMENT)
-				comments-ol = Comment entry fields (email, display name, website)
+				comments-user-input = Comment entry fields (email, display name, website)
 				comment-input = div for comment entry field (white box)
 				comment = wraps each individual comment
 					comment-img = styles the profile image for each comment
@@ -34,3 +38,16 @@
 	*Text formatting:
 		bold - bolds the span
 		*/
+
+
+
+/*
+REFACTORING TO DO:
+	Clean up class names:
+		section-code could just be code-box and reused for any code
+		section-ol should be renamed something that makes it clear it is a content-list
+			inside the section content
+		section-table can simply be data-table or content-table and reused
+		Add classes where needed to stop element selection (specifically in .nav-side and
+			.nav-top)
+*/

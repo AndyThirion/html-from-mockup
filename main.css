@@ -23,7 +23,7 @@
 				comments = wrapper for comments section
 				comments-title = "Comments" title
 				comment-heading = small headings in comments (USER INFO and COMMENT)
-				comments-ol = Comment entry fields (email, display name, website)
+				comments-user-input = Comment entry fields (email, display name, website)
 				comment-input = div for comment entry field (white box)
 				comment = wraps each individual comment
 					comment-img = styles the profile image for each comment
@@ -38,6 +38,23 @@
 		*/
 
 
+/*GLOBALS*/
+/*Forces border-box model - makes margin calcs easier*/
+* {
+	box-sizing: border-box;
+}
+
+/*Remove default styling from links*/
+a[href] {
+	text-decoration: none;
+	color: #9b59b6;
+}
+
+form[input="name"] {
+	background: gray;
+}
+
+
 /*Sets gray background for whole page*/
 html {
 	background: #7F8C8D;
@@ -48,14 +65,18 @@ html {
 	font-weight: bold;
 }
 
+/*Begin Article Formatting*/
+.column-width{
+	width: 500px;
+	margin: auto;
+	position: relative;
+}
 
 /*BEGIN HEADER FORMATTING*/
 .header {
 	position: relative;
-	width: 500px;
 	height: 200px;
 	background: #2ECC71;
-	margin: auto;
 	margin-top: 20px;
 	color: white;
 	border-bottom: 5px solid #27AE60;
@@ -100,16 +121,35 @@ html {
 
 /*SIDE NAV FORMATTING GOES HERE*/
 
+.nav-side {
+	background: white;
+	position: absolute;
+	left: 520px;
+	width: 175px;
+	border-bottom: 3px solid #444444;
+}
+
+.nav-side-title {
+	margin: 0;
+	padding: 10px 0 10px 10px;
+}
+
+.nav-side-list {
+	padding: 0px 0 16px 20px;
+	margin: 0;
+	list-style-type: none;
+
+}
+
+.nav-side > ol > li > a {
+	text-decoration: none;
+	color: #666673;  /*dark gray*/
+	font-size: .75em;
+}
 
 /*BEGIN ARTICLE BODY FORMATTING*/
 
-* {
-	box-sizing: border-box;
-}
-
 .article {
-	width: 500px;
-	margin: auto;
 	background: #ECF0F1;
 	padding: 25px 20px;
 }
@@ -134,13 +174,13 @@ html {
 
 /*BEGIN SECTION FORMATTING*/
 
-/*Section Titles*/
 .section .section-content {
 	padding: 0px 20px 10px 20px;
 	font-size: .75em;
-	line-height: 1.35em;
+	line-height: 1.5em;
 }
 
+/*Section Titles*/
 .section .section-title {
 	font-size: .85em;
 	padding-left: 10px;
@@ -148,7 +188,68 @@ html {
 	border-bottom: 1px solid #BDC3C7;
 }
 
+/*Data Table Styling*/
+.section-table {
+	font-size: .75em;
+}
 
+.section-table th {
+	background-color: #BDC3C7;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 6px 0 6px 0;
+	border: 1px solid #999999;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.section-table td {
+	padding: 5px;
+	border: 1px solid #999999;
+}
+
+.section-table .button {
+	padding: 5px 20px;
+	background-color: #3498DB;
+	color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*Code box styling*/
+
+.section-code {
+	background-color: #BDC3C7;
+	padding: 10px 30px 10px 30px;
+}
+
+.code-content {
+	font-size: .75em;
+}
+
+/*List Styling*/
+
+.section-ol > li {
+	padding-bottom: 15px;
+}
+
+
+/*Article Timestamp Styling*/
+.timestamp {
+	font-size: .75em;
+	color: #A09999;
+	padding-bottom: 20px;
+}
+
+/*Begin Comment Section*/
+
+
+/*Comment Section Title*/
+.comments-title{
+	border-bottom: 1px solid #BDC3C7;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
 
 
 
